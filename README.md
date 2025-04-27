@@ -117,9 +117,9 @@ Add images, GIFs, or screenshots if helpful!
 
 ## ✅ Tasks & Bonus Checklist
 
-- [ ] All members followed at least 2 social channels and filled the form (mandatory task)
-- [ ] Bonus Task 1 - Shared Badges (2 points)
-- [ ] Bonus Task 2 - Signed up for Sprint.dev (3 points)
+- [✅] All members followed at least 2 social channels and filled the form (mandatory task)
+- [✅] Bonus Task 1 - Shared Badges (2 points)
+- [✅] Bonus Task 2 - Signed up for Sprint.dev (3 points)
 
 *(Mark with ✅ if completed)*
 
@@ -183,4 +183,4 @@ Share your hackathon journey — challenges, learnings, fun moments, or shout-ou
 
 ---
 
-Would you also like me to quickly show you a "Table of Contents" section you can add at the top? 📑 (it'll make it even more pro!) 🚀
+
