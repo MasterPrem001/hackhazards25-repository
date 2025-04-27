@@ -39,19 +39,15 @@ During the development, there was a moment when I realized the need for a more d
 ## 🛠️ Tech Stack
 
 ### Core Technologies Used:
-- Frontend:
-- Backend:
-- Database:
-- APIs:
-- Hosting:
+- Frontend:  HTML, CSS, JavaScript
+- Backend:  Flask,Python
+- Database: None
+- APIs: groq api
+- Hosting: [vercel](https://hackhazards25-repository.vercel.app)
 
 ### Sponsor Technologies Used (if any):
-- [ ] **Groq:** _How you used Groq_  
-- [ ] **Monad:** _Your blockchain implementation_  
-- [ ] **Fluvio:** _Real-time data handling_  
-- [ ] **Base:** _AgentKit / OnchainKit / Smart Wallet usage_  
-- [ ] **Screenpipe:** _Screen-based analytics or workflows_  
-- [ ] **Stellar:** _Payments, identity, or token usage_
+- [ ] **Groq:** _Used Groq to enhance the AI capabilities of the project by leveraging its powerful AI models and enabling more efficient processing and tool usage for real-time information retrieval and interaction.
+-
 *(Mark with ✅ if completed)*
 ---
 
@@ -59,10 +55,10 @@ During the development, there was a moment when I realized the need for a more d
 
 Highlight the most important features of your project:
 
-- ✅ Feature 1  
-- ✅ Feature 2  
-- ✅ Feature 3  
-- ✅ Feature 4  
+- ✅ **Real-Time AI Integration**: Seamlessly integrates with advanced AI systems like Groq and Llama models for dynamic problem-solving.
+- ✅ **Actionable Responses**: Utilizes compound-beta to enhance interactions by performing multiple tasks like web searches and code execution.
+- ✅ **User-Friendly Interface**: Clean and responsive front-end design for easy interaction with the application.
+- ✅ **Real-Time Information Access**: Provides accurate and up-to-date responses by fetching real-time data via web search and AI tool integration.
 
 Add images, GIFs, or screenshots if helpful!
 
