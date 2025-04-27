@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News Results</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script>
+        // Add animation when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            setTimeout(() => {
+                document.querySelector('.container').classList.add('loaded');
+                
+                // Animate news items one by one
+                const newsItems = document.querySelectorAll('.news-item');
+                newsItems.forEach((item, index) => {
+                    setTimeout(() => {
+                        item.classList.add('visible');
+                    }, 200 * (index + 1));
+                });
+            }, 100);
+        });
+    </script>
+</head>
+<body>
+    <div class="container results-container">
+        <div class="logo-container">
+            <i class="fas fa-newspaper logo-icon"></i>
+        </div>
+        <h1>Today's News</h1>
+        <div class="date-display">
+            <i class="far fa-calendar-alt"></i>
+            <span id="current-date"></span>
+            <script>
+                // Display current date
+                const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+                document.getElementById('current-date').textContent = new Date().toLocaleDateString(undefined, options);
+            </script>
+        </div>
+        
+        <div class="news-container">
+            <!-- Parse the news content and split it into individual news items -->
+            {% set news_content = news|safe %}
+            {% set news_items = news_content.split('<br><br>') %}
+            
+            {% for item in news_items %}
+                {% if item.strip() %}
+                <div class="news-item">
+                    <div class="news-content">{{ item|safe }}</div>
+                </div>
+                {% endif %}
+            {% endfor %}
+        </div>
+        
+        <a href="/" class="back-btn">
+            <i class="fas fa-arrow-left"></i>
+            Search again
+        </a>
+        
+        <div class="footer">
+            <p>Powered by AI • Updated Daily</p>
+        </div>
+    </div>
+</body>
+</html>

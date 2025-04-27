@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>AI Newsletter</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script>
+        // Function to toggle visibility of the custom topic input
+        function toggleCustomTopicInput() {
+            var selectElement = document.getElementById("topic");
+            var customTopicInput = document.getElementById("customTopicInput");
+            
+            if (selectElement.value === "Other") {
+                customTopicInput.style.display = "block";
+                customTopicInput.classList.add('active');
+            } else {
+                customTopicInput.style.display = "none";
+                customTopicInput.classList.remove('active');
+            }
+        }
+
+        // Function to handle form submission
+        function handleSubmit(event) {
+            event.preventDefault(); // Prevent the default form submission
+            
+            var selectElement = document.getElementById("topic");
+            var customTopicInput = document.getElementById("customTopic");
+            var loader = document.getElementById("loader");
+            var formContainer = document.getElementById("formContainer");
+            
+            // If "Other" is selected, use the custom topic value
+            if (selectElement.value === "Other" && customTopicInput.value.trim() !== "") {
+                // Instead of modifying the select element's value, we modify the hidden input
+                document.getElementById("finalTopic").value = customTopicInput.value.trim();
+            } else {
+                document.getElementById("finalTopic").value = selectElement.value;
+            }
+            
+            // Show loading animation and message
+            loader.style.display = "block";
+            document.getElementById("loadingMessage").style.display = "block";
+            formContainer.classList.add("loading");
+            
+            // Now submit the form
+            setTimeout(() => {
+                document.getElementById("newsForm").submit();
+            }, 500);
+        }
+
+        // Add animation when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            setTimeout(() => {
+                document.querySelector('.container').classList.add('loaded');
+            }, 100);
+        });
+    </script>
+</head>
+<body>
+    <div class="container">
+        <div class="logo-container">
+            <i class="fas fa-newspaper logo-icon"></i>
+        </div>
+        <h1>AI Newsletter</h1>
+        <p class="tagline">Get personalized news updates powered by AI</p>
+        
+        <div id="formContainer" class="form-container">
+            <form id="newsForm" method="POST" onsubmit="handleSubmit(event)">
+                <div class="input-group">
+                    <label for="location">
+                        <i class="fas fa-map-marker-alt input-icon"></i>
+                        Location
+                    </label>
+                    <input type="text" id="location" name="location" placeholder="e.g., New York, India, Global" required>
+                </div>
+
+                <div class="input-group">
+                    <label for="topic">
+                        <i class="fas fa-tags input-icon"></i>
+                        Topic
+                    </label>
+                    <select id="topic" onchange="toggleCustomTopicInput()" required style="color: white;">
+                        <option value="" disabled selected>Choose a topic</option>
+                        <option value="Politics">Politics</option>
+                        <option value="Cricket">Cricket</option>
+                        <option value="Tech">Tech</option>
+                        <option value="Sports">Sports</option>
+                        <option value="World">World</option>
+                        <option value="Entertainment">Entertainment</option>
+                        <option value="Ground-Level News">Ground-Level News (Under-viewed but Impactful)</option>
+                        <option value="Other">Other (Enter Your Own)</option>
+                    </select>
+                </div>
+                
+                <!-- Hidden input that will actually be sent to the server -->
+                <input type="hidden" id="finalTopic" name="topic" value="">
+
+                <div id="customTopicInput" class="custom-topic input-group">
+                    <label for="customTopic">
+                        <i class="fas fa-edit input-icon"></i>
+                        Custom Topic
+                    </label>
+                    <input type="text" id="customTopic" name="customTopic" placeholder="Type your topic">
+                </div>
+
+                <button type="submit" class="submit-btn">
+                    <i class="fas fa-paper-plane"></i>
+                    Get Newsletter
+                </button>
+            </form>
+        </div>
+        
+        <div id="loading-container" class="loading-container">
+            <div id="loader" class="loader"></div>
+            <p id="loadingMessage" class="loading-message">Gathering the latest news for you...</p>
+        </div>
+        
+        <div class="footer">
+            <p>Powered by Groq AI • Updated Daily</p>
+        </div>
+    </div>
+</body>
+</html>
