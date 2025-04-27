@@ -61,7 +61,7 @@ Highlight the most important features of your project:
 - ✅ **Real-Time Information Access**: Provides accurate and up-to-date responses by fetching real-time data via web search and AI tool integration.
 
 Add images, GIFs, or screenshots if helpful!
-[Project screenshots](assets/Screenshot 2025-04-27 135919.png)
+[Project screenshots](https://github.com/MasterPrem001/hackhazards25-repository/blob/main/assets/Screenshot%202025-04-27%20135919.png)
 ---
 
 ## 📽️ Demo & Deliverables
