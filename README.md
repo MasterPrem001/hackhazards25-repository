@@ -2,33 +2,28 @@
 
 # 🚀 Project Title
 
-> A one-line tagline or mission statement for your project.
+> **Groq AI News Aggregator**: Leveraging Groq's AI to deliver personalized, concise, and timely news summaries for a seamless user experience.
 
 ---
 
 ## 📌 Problem Statement
-
-Select the problem statement number and title from the official list given in Participant Manual.
-
-**Example:**  
-**Problem Statement 7 – Transform the Future of Rural Commerce**
+**Problem Statement 1:**  *Weave AI magic with Groq*
 
 ---
 
 ## 🎯 Objective
 
-What problem does your project solve, and who does it serve?  
-Briefly describe the real-world use case and the value it provides.
-
+This project solves the problem of information overload by providing users with a personalized, real-time news summary based on their preferences. In today's fast-paced world, people often struggle to keep up with the vast amount of news available, and it can be time-consuming to sift through multiple sources to find relevant information. This project serves anyone who wants to stay informed without spending too much time on it, whether they’re professionals, students, or simply individuals who want to stay up-to-date on specific topics.
+Using Groq's compound-beta AI, which intelligently integrates multiple external tools for web search and code execution, it provides up-to-date and accurate news in a concise format. The system leverages advanced Llama models for more precise responses, making it perfect for users who want to stay informed without sifting through excessive content. Whether you're a professional, student, or casual reader, this tool saves time by curating relevant news tailored to your interests.
 ---
 
 ## 🧠 Team & Approach
 
 ### Team Name:  
-`Your team name here`
+`EchoMind`
 
 ### Team Members:  
-- Name 1 (GitHub / LinkedIn / Role)  
+- Name 1: Prem Dubay (GitHub / LinkedIn / Role)  
 - Name 2  
 - Name 3  
 *(Add links if you want)*
