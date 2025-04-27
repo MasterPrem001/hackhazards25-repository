@@ -61,7 +61,7 @@ Highlight the most important features of your project:
 - ✅ **Real-Time Information Access**: Provides accurate and up-to-date responses by fetching real-time data via web search and AI tool integration.
 
 Add images, GIFs, or screenshots if helpful!
-![Project screenshots](https://github.com/MasterPrem001/hackhazards25-repository/blob/main/assets/Screenshot%202025-04-27%20135919.png)
+![Project screenshots](https://github.com/MasterPrem001/hackhazards25-repository/blob/main/assets/Screenshot%202025-04-27%20140544.png)
 ---
 
 ## 📽️ Demo & Deliverables
@@ -84,22 +84,27 @@ Add images, GIFs, or screenshots if helpful!
 ## 🧪 How to Run the Project
 
 ### Requirements:
-- Node.js / Python / Docker / etc.
-- API Keys (if any)
-- .env file setup (if needed)
-
+Python 3.8 or above
+Flask
+Groq API key
+.env file setup (for storing API keys)
 ### Local Setup:
 ```bash
-# Clone the repo
-git clone https://github.com/your-team/project-name
+# Clone the repository
+git clone https://github.com/your-username/your-repo-name.git
 
-# Install dependencies
-cd project-name
-npm install
+# Navigate into the project directory
+cd your-repo-name
 
-# Start development server
-npm run dev
-```
+# Install Python dependencies
+pip install -r requirements.txt
+
+# add your api as enviroment key
+echo "GROQ_API_KEY=your_groq_api_key_here" >> .env
+
+# Start the Flask development server
+python app.py
+
 
 Provide any backend/frontend split or environment setup notes here.
 
@@ -109,11 +114,15 @@ Provide any backend/frontend split or environment setup notes here.
 
 List improvements, extensions, or follow-up features:
 
-- 📈 More integrations  
-- 🛡️ Security enhancements  
-- 🌐 Localization / broader accessibility  
+📈 More Integrations: Add more AI models, external news sources, and new delivery methods like WhatsApp or Telegram.
 
----
+🛡️ Security Enhancements: Improve API key management, user authentication, and rate limiting.
+
+🌐 Localization and Accessibility: Support multiple languages and make the platform more accessible for global users.
+
+📰 Newsletter Customization: Allow users to customize topics, frequency, and format of their newsletters.
+
+🔔 Real-time Notifications: Push updates or alerts for breaking news tailored to user preferences.
 
 ## 📎 Resources / Credits
 
