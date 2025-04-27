@@ -13,8 +13,8 @@
 
 ## 🎯 Objective
 
-This project solves the problem of information overload by providing users with a personalized, real-time news summary based on their preferences. In today's fast-paced world, people often struggle to keep up with the vast amount of news available, and it can be time-consuming to sift through multiple sources to find relevant information. This project serves anyone who wants to stay informed without spending too much time on it, whether they’re professionals, students, or simply individuals who want to stay up-to-date on specific topics.
-Using Groq's compound-beta AI, which intelligently integrates multiple external tools for web search and code execution, it provides up-to-date and accurate news in a concise format. The system leverages advanced Llama models for more precise responses, making it perfect for users who want to stay informed without sifting through excessive content. Whether you're a professional, student, or casual reader, this tool saves time by curating relevant news tailored to your interests.
+This project addresses the issue of information overload by delivering personalized, real-time news summaries based on individual preferences. In today’s fast-paced world, keeping up with the sheer volume of news can be overwhelming, and sifting through multiple sources to find what's relevant takes up valuable time. This tool caters to anyone seeking to stay informed without spending excessive time, be it professionals, students, or casual readers wanting to stay current on specific topics.
+By using Groq’s compound-beta AI, which integrates web search and code execution tools, the system delivers accurate, up-to-date news in a concise format. With advanced Llama models for precise responses, it provides an ideal solution for users wanting to stay informed while avoiding information overload. Whether you're a professional or someone who enjoys curated content, this tool helps save time by delivering only the most relevant news.
 ---
 
 ## 🧠 Team & Approach
