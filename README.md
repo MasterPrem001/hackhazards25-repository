@@ -9,6 +9,25 @@
 
 ---
 
+## 📚 Table of Contents
+
+- [📌 Problem Statement](#-problem-statement)
+- [🎯 Objective](#-objective)
+- [🧠 Team & Approach](#-team--approach)
+- [🛠️ Tech Stack](#-tech-stack)
+- [✨ Key Features](#-key-features)
+- [📸 Screenshots](#-screenshots)
+- [📽️ Demo & Deliverables](#-demo--deliverables)
+- [✅ Tasks & Bonus Checklist](#-tasks--bonus-checklist)
+- [🧪 How to Run the Project](#-how-to-run-the-project)
+- [🧬 Future Scope](#-future-scope)
+- [📎 Resources / Credits](#-resources--credits)
+- [🏁 Final Words](#-final-words)
+
+
+---
+
+
 ## 📌 Problem Statement
 
 **Problem Statement 1:**  
