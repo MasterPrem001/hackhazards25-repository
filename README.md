@@ -23,16 +23,17 @@ Using Groq's compound-beta AI, which intelligently integrates multiple external 
 `EchoMind`
 
 ### Team Members:  
-- Name 1: Prem Dubay (GitHub / LinkedIn / Role)  
-- Name 2  
-- Name 3  
-*(Add links if you want)*
+- Name 1: Prem Dubay ([Github](https://github.com/MasterPrem001) / [LinkedIn](https://www.linkedin.com/in/prem-dubay-master) / Role(Fullstack Dev) 
 
 ### Your Approach:  
-- Why you chose this problem  
-- Key challenges you addressed  
-- Any pivots, brainstorms, or breakthroughs during hacking  
+Why I chose this problem:
+I chose this problem because, in today's world, staying up-to-date with news can be overwhelming. The constant influx of information makes it difficult to find relevant and concise news. People often struggle to filter out the noise and focus on what truly matters to them. By using Groq's AI and compound-beta, I saw an opportunity to simplify the news consumption process, tailoring it to individual preferences while saving time and energy.
 
+Key challenges I addressed:
+One of the key challenges was aggregating reliable and timely news from multiple sources and presenting it in a concise format. Another challenge was ensuring the system’s ability to adapt to user preferences, delivering highly relevant news based on location and topic of interest. Additionally, integrating Groq’s compound-beta AI system was crucial to providing accurate and up-to-date information through intelligent tool use like web search and code execution.
+
+Any pivots, brainstorms, or breakthroughs during hacking:
+During the development, there was a moment when I realized the need for a more dynamic and responsive AI system that could deliver real-time news updates while maintaining accuracy and relevance. This led to the decision to integrate Groq's compound-beta, which was a breakthrough in allowing the system to perform multiple web searches and code executions simultaneously, previously i was thinking of using other methods to web scrape the news and use grok models to intrigate it.
 ---
 
 ## 🛠️ Tech Stack
